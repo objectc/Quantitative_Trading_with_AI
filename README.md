@@ -5,8 +5,8 @@ Some quantitative method and AI Algorithms used in trading.
 ### Resample Adjusted Prices
 The trading signal you'll develop in this project does not need to be based on daily prices, for instance, you can use month-end prices to perform trading once a month. To do this, you must first resample the daily adjusted closing prices into monthly buckets, and select the last observation of each month.
 ### Compute Log Returns
-Compute log returns ($R_t$) from prices ($P_t$) as your primary momentum indicator:
-$$R_t = log_e(P_t) - log_e(P_{t-1})$$
+Compute log returns (R_t) from prices (P_t) as your primary momentum indicator:
+<img src="https://render.githubusercontent.com/render/math?math=R_t = log_e(P_t) - log_e(P_{t-1})">
 ### Shift Returns
 Shift the log returns to the previous or future returns in the time series.
 ### Generate Trading Signal
