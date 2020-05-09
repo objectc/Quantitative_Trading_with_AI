@@ -21,20 +21,24 @@ Here's a strategy that we will try:
 Our null hypothesis ($H_0$) is that the actual mean return from the signal is zero. We'll perform a one-sample, one-sided t-test on the observed mean return, to see if we can reject $H_0$.
 We'll need to first compute the t-statistic, and then find its corresponding p-value. The p-value will indicate the probability of observing a mean return equally or more extreme than the one we observed if the null hypothesis were true. A small p-value means that the chance of observing the mean we observed under the null hypothesis is small, and thus casts doubt on the null hypothesis. It's good practice to set a desired level of significance or alpha ($\alpha$) before computing the p-value, and then reject the null hypothesis if <img src="https://render.githubusercontent.com/render/math?math=p &lt; \alpha"> .
 
-## test_normality.ipynb ##
+## test_normality ##
 
 Testing if a Distribution is Normal
 
-#### Boxplot-Whisker Plot, Histogram and QQ-Plot ####
+### Boxplot-Whisker Plot, Histogram and QQ-Plot ###
 
 We can visually check if a distribution looks normally distributed. 
 1. A box whisker plot lets us check for symmetry around the mean. 
 2. A histogram lets us see the overall shape. 
 3. A QQ-plot lets us compare our data distribution with a normal distribution (or any other theoretical "ideal" distribution).
 
-#### Testing for Normality ####
+### Testing for Normality ###
 
-##### Shapiro-Wilk #####
+### Shapiro-Wilk ###
+### Kolmogorov-Smirnov ###
 
-##### Kolmogorov-Smirnov #####
-
+## Pairs_Candidates
+Checking if a pair of stocks is cointegrated
+### Calculate hedge ratio with regression
+### Calculate the spread
+### Check if spread is stationary using Augmented Dickey Fuller Test
